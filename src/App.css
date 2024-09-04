@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#root {
+  width: 100%;
+  flex: 1;
+}
+
+.header {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: orchid;
+}
+.logoTitle {
+  display: flex;
+  position: relative;
+  align-items: center;
+  left: 10vw;
+  gap: 2vw;
+}
+.logoTitle img {
+  height: 6vh;
+  width: 6vh;
+  border-radius: 50%;
+}
+.navigation {
+  width: 14vw;
+  position: fixed;
+  right: 10vw;
+}
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2vw;
+  align-items: center;
+}
+li {
+  cursor: pointer;
+}
+.about {
+  height: 56.5vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.imgdiv {
+  height: 30vh;
+  width: 30vh;
+  overflow: hidden;
+  border-radius: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image {
+  height: 100%;
+  width: 100%;
+}
+.image:hover {
+  transform: scale(1.1);
+}
+h2 {
+  font-variant: small-caps;
+}
+.content {
+  margin-left: 2vw;
+  height: 25vh;
+  width: 50vw;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: orchid;
+}
+.contact {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.contact p {
+  margin-top: 1px;
+  color: black;
+}
+footer {
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background-color: orchid;
+  display: flex;
+  height: 6vh;
+  align-items: center;
+  justify-content: center;
+}
+pre {
+  font-size: 1rem;
+}
+.heart {
+  color: red;
 }
