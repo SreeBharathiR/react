@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="about">
       <div className="imgdiv">
-        <img className="image" src="profile.jpeg" alt="Profile Image" />
+        <img className="image" src="profile.jpeg" alt="Profile" />
       </div>
       <div className="content">
         {" "}
